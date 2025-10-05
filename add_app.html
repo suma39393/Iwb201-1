@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة تطبيق</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo">منصة التطبيقات الذكية</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">الرئيسية</a></li>
+                    <li><a href="AboutUs.html">من نحن</a></li>
+                    <li><a href="apps.html">التطبيقات</a></li>
+                    <li><a href="add_app.html" class="active">إضافة تطبيق</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h2>إضافة تطبيق جديد</h2>
+            <form id="appForm">
+                <label for="appName">اسم التطبيق (إنكليزي، بدون فراغات)</label>
+                <input type="text" id="appName" placeholder="ادخل اسم التطبيق" required>
+
+                <label for="company">اسم الشركة (إنكليزي)</label>
+                <input type="text" id="company" placeholder="ادخل اسم الشركة" required>
+
+                <label for="website">الموقع الإلكتروني (URL)</label>
+                <input type="url" id="website" placeholder="ادخل رابط الموقع" required>
+
+                <label for="isFree">مجاني / مدفوع</label>
+                <select id="isFree">
+                    <option value="مجاني">مجاني</option>
+                    <option value="مدفوع">مدفوع</option>
+                </select>
+
+                <label for="category">الفئة</label>
+                <select id="category">
+                    <option value="Education">Education</option>
+                    <option value="E-Commerce">E-Commerce</option>
+                    <option value="Robotics">Robotics</option>
+                    <option value="Health">Health</option>
+                    <option value="Translation">Translation</option>
+                </select>
+
+                <label for="description">وصف التطبيق</label>
+                <textarea id="description" placeholder="ادخل وصف التطبيق" required></textarea>
+
+                <label for="logo">رابط الشعار</label>
+                <input type="url" id="logo" placeholder="ادخل رابط صورة الشعار">
+
+                <label for="video">رابط الفيديو (YouTube)</label>
+                <input type="url" id="video" placeholder="ادخل رابط فيديو">
+
+                <label for="audio">رابط الصوت (MP3)</label>
+                <input type="url" id="audio" placeholder="ادخل رابط ملف صوتي">
+
+                <button type="submit">إرسال</button>
+                <button type="reset">إعادة تعيين</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+
+            <!-- العمود الأول: نبذة -->
+            <div class="footer-section about">
+                <h3>منصة التطبيقات الذكية</h3>
+                <p>
+                    🌟 مشروع أكاديمي تم تطويره من قِبل طلاب <strong>المعهد التقاني للحاسوب – الجامعة الافتراضية السورية</strong> عام 2025، بهدف استعراض تطبيقات الذكاء الاصطناعي وتبسيطها للمستخدم.
+                </p>
+            </div>
+
+            <!-- العمود الثاني: روابط سريعة -->
+            <div class="footer-section links">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="apps.html">التطبيقات</a></li>
+                    <li><a href="team.html">الفريق</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثالث: تواصل معنا -->
+            <div class="footer-section contact">
+                <h3>تواصل معنا</h3>
+                <p>📍 سوريا – دمشق</p>
+                <p>📧 Dania Mohammed Samer Salloum@gmail.com</p>
+                <p>📞 +963 938 768 725</p>
+            </div>
+
+            <!-- العمود الرابع: مواقع التواصل -->
+            <div class="footer-section social">
+                <h3>تابعنا</h3>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- حقوق النشر -->
+        <div class="footer-bottom">
+            <p>© 2025 | تعريف تطبيقات الذكاء الاصطناعي</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
